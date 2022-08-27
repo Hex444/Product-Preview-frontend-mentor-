@@ -96,9 +96,34 @@ h2 {
     border-radius: 10px;
     color: white;
     font-weight: bolder;
+    transition-duration: 0.3s;
     font-family: 'Montserrat', sans-serif;
 }
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 22%);
+    transition-duration: 0.3s;
 
-.product img {
-    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 640px) {
+    div.product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    div.card {
+        box-shadow: none;
+        width: calc(100%-0.01px);
+        height: calc(100vh-0.01px);
+    }
+    .half1 picture {
+        border-radius: 0.25rem 0.25rem 0px 0px;
+    }
 }
